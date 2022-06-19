@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dunavska idila - rezervacija</title>
+    <link rel="stylesheet" href="css/rezervacija.css" />
+
+    <script src="javaskript.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Glavna stranica.html">Početna</a>
+        <a href="NevenaCV.html">Nevenin CV</a>
+        <a href="LukaCV.html">Lukin CV</a>
+        <div class="dropdown">
+            <button class="dropbtn">Restoran</button>
+            <div class="dropdown-content">
+              <a href="Restoran.html">O nama</a>
+              <a href="Meni.html">Meni</a>
+              <a class="active">Rezervacija</a>
+              <a href="Kviz.html">Kviz</a>
+            </div>
+          </div> 
+    </nav>
+
+    
+    <div id="rezervacija">
+        <h1 style="font-size: 60px;">Rezervacija</h1>
+        <h3>Popunite potrebne podatke i jednostavno rezervišite sto u našem restoranu</h3>
+
+        <form style="font-size: 25px;">
+            <label for="datum">Datum</label><br>
+            <input type="date" id="datum" name="datum" class="rezervacija-polje"><br>
+            <label for="vreme">Vreme</label><br>
+            <input type="time" id="vreme" name="vreme" class="rezervacija-polje"><br>
+            <label for="brosoba">Broj osoba</label><br>
+            <input type="number" min="1" id="brosoba" name="brosoba" class="rezervacija-polje"><br><br>
+
+            <button type="button" id="rezervacija-dugme" onclick="rezervacija()">Rezervišite</button>
+        </form> 
+
+    </div>
+</body>
+</html>

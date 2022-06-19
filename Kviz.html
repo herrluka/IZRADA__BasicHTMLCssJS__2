@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dunavska idila - kviz</title>
+    <link rel="stylesheet" href="css/kviz.css" />
+
+    <script src="javaskript.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="Glavna stranica.html">Početna</a>
+        <a href="NevenaCV.html">Nevenin CV</a>
+        <a href="LukaCV.html">Lukin CV</a>
+        <div class="dropdown">
+            <button class="dropbtn">Restoran</button>
+            <div class="dropdown-content">
+              <a href="Restoran.html">O nama</a>
+              <a href="Meni.html">Meni</a>
+              <a href="Rezervacija.html">Rezervacija</a>
+              <a class="active">Kviz</a>
+            </div>
+          </div> 
+    </nav>
+
+    <div id="kviz">
+
+        <h1 style="text-align: center; font-size: 60px; font-family: cursive; margin-top: 0;">Kviz</h1>
+
+        <div style="padding: 10px;">
+            <p style="border: 2px solid white; width: 60%; padding: 5px; border-radius: 5px; margin:auto;">
+                <b>1. Pitanje: </b>Koje godine je osnovan restoran ,,Dunavska idila"?
+            </p>
+        </div>
+
+        <div style="margin-left: 25%;">
+            <input type="radio" id="html" name="godina_osnivanja" value="1996">
+            <label for="1996">1996.</label><br>
+            <input type="radio" id="2010" name="godina_osnivanja" value="2010">
+            <label for="2010">2010.</label><br>
+            <input type="radio" id="2002" name="godina_osnivanja" value="2002">
+            <label for="2002">2002.</label><br />
+            <img id="prvo-tacno" src="slike/tacno.png" class="tacno-netacno" />
+            <img id="prvo-netacno" src="slike/netacno.png" class="tacno-netacno" />
+        </div>
+
+        <div style="padding: 10px;">
+            <p style="border: 2px solid white; width: 60%; padding: 5px; border-radius: 5px; margin:auto;">
+                <b>2. Pitanje: </b>Koji proizvod se smatra specijalitetom restorana ,,Dunavska idila"?
+            </p>
+        </div>
+
+        <div style="margin-left: 25%;">
+            <input type="radio" id="som" name="specijalitet" value="som">
+            <label for="som">Somovina u orasima</label><br>
+            <input type="radio" id="file" name="specijalitet" value="file">
+            <label for="file">Pileći file</label><br>
+            <input type="radio" id="saran" name="specijalitet" value="saran">
+            <label for="saran">Dimljeni šaran</label><br />
+            <img id="drugo-tacno" src="slike/tacno.png" class="tacno-netacno" />
+            <img id="drugo-netacno" src="slike/netacno.png" class="tacno-netacno" />
+        </div>
+
+        <div style="padding: 10px;">
+            <p style="border: 2px solid white; width: 60%; padding: 5px; border-radius: 5px; margin:auto;">
+                <b>3. Pitanje: </b>U kom mestu se nalazi restoran ,,Dunavska idila"?
+            </p>
+        </div>
+
+        <div style="margin-left: 25%;">
+            <input type="radio" id="ns" name="mesto" value="ns">
+            <label for="ns">Novi Sad</label><br>
+            <input type="radio" id="vg" name="mesto" value="vg">
+            <label for="vg">Veliko Gradište</label><br>
+            <input type="radio" id="bg" name="mesto" value="bg">
+            <label for="bg">Beograd</label><br />
+            <img id="trece-tacno" src="slike/tacno.png" class="tacno-netacno" />
+            <img id="trece-netacno" src="slike/netacno.png" class="tacno-netacno" />
+        </div>
+
+        <div style="padding: 10px;">
+            <p style="border: 2px solid white; width: 60%; padding: 5px; border-radius: 5px; margin:auto;">
+                <b>4. Pitanje: </b>Na meniju restorana može se naći?
+            </p>
+        </div>
+
+        <div style="margin-left: 25%;">
+            <input type="radio" id="riba" name="meni" value="riba">
+            <label for="riba">Samo riba</label><br>
+            <input type="radio" id="rostilj" name="meni" value="rostilj">
+            <label for="rostilj">Samo roštilj</label><br>
+            <input type="radio" id="ribarostilj" name="meni" value="ribarostilj">
+            <label for="ribarostilj">I riba i roštilj</label><br />
+            <img id="cetvrto-tacno" src="slike/tacno.png" class="tacno-netacno" />
+            <img id="cetvrto-netacno" src="slike/netacno.png" class="tacno-netacno" />
+        </div>
+
+        <div style="padding: 10px;">
+            <p style="border: 2px solid white; width: 60%; padding: 5px; border-radius: 5px; margin:auto;">
+                <b>5. Pitanje: </b>Najčešće konzumirano piće u restoranu je?
+            </p>
+        </div>
+
+        <div style="margin-left: 25%;">
+            <input type="radio" id="ds" name="pice" value="ds">
+            <label for="ds">Domaći sok</label><br>
+            <input type="radio" id="pivo" name="pice" value="pivo">
+            <label for="pivo">Pivo</label><br>
+            <input type="radio" id="vino" name="pice" value="vino">
+            <label for="vino">Vino</label><br />
+            <img id="peto-tacno" src="slike/tacno.png" class="tacno-netacno" />
+            <img id="peto-netacno" src="slike/netacno.png" class="tacno-netacno" />
+        </div>
+        
+        <div style="text-align: center;">
+            <button id="kviz-dugme" onclick="proveri()">Proverite odgovore</button>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:not(.active):hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: rgb(242, 242, 242);
+    padding: 14px 16px;
+    background-color: #04AA6D;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../slike/vino-pozadina.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    padding: 200px;
+}
+
+.zaglavlje-karte {
+    text-align: center; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.slika-u-zaglavlju-karte {
+    width: 50px; 
+    height: 50px;
+}
+
+.red-proizvoda {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.proizvod {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    background-color: white;
+    flex: 1;
+}
+
+.proizvod img {
+    width: 200px;
+    height: 200px;
+}
+
+.proizvod p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}

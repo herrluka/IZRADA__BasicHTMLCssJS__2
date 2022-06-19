@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dunavska idila</title>
+    <link rel="stylesheet" href="css/restoran.css" />
+
+    <script src="javaskript.js"></script>
+</head>
+
+  <body>
+
+    <nav>
+        <a href="Glavna stranica.html">Početna</a>
+        <a href="NevenaCV.html">Nevenin CV</a>
+        <a href="LukaCV.html">Lukin CV</a>
+        <div class="dropdown">
+            <button class="dropbtn">Restoran</button>
+            <div class="dropdown-content">
+              <a class="active">O nama</a>
+              <a href="Meni.html">Meni</a>
+              <a href="Rezervacija.html">Rezervacija</a>
+              <a href="Kviz.html">Kviz</a>
+            </div>
+          </div> 
+    </nav>
+
+    <header>
+        <h1 style="margin: 0; font-size: 150px; font-family: Brush Script MT;">Dunvska idila...</h1>
+    </header>
+
+    <div id="o-nama">
+        <h1 style="font-size: 60px;">O Dunavskoj idili...</h1>
+
+        <div style="padding-right: 200px; padding-left: 200px; font-size: 25px;">
+            <p>Restoran ,,Dunavska idila" je osnovan 2002. godine na obali Dunava u blizini Velikog Gradišta. Jedinstveni pogledi koji se pružaju sa terase restorana su otavili mnoge posetioce restorana bez daha. Lep ambijent, ljubazno osoblje i dobra hrana su samo neki od razloga zašto se naši gosti iznova i iznova vraćaju da ponovo dožive dunavsku idilu.  </p>
+            <p>U ponudi restorana se nalaze vina najpoznatijih srpskih vinarija. Dobra vina daju još lepši ukus specijalitetima koji mogu da se probaju u ,,Dunavskoj idili". Pored brojnih roštiljskih specijaliteta koji se nalaze u ponudi, moguće probati i riblje specijalitete. Najpoznatiji specijalitet restorana po utiscima naših gostiju je pohovana somovina u orasima.</p>
+        </div>
+       
+    </div>
+
+    <div id="utisak">
+        <h1 style="text-align: center; font-size: 60px; font-family: cursive; margin-top: 0; color: white;">Ostavite utisak o restoranu</h1>
+        
+        <textarea id="utisak-o-restoranu" style="width: 75%; resize: none; border: 0; font-size: 20px; outline: none;" rows="8" placeholder="Vaš komentar..."></textarea>
+        <div>
+            <button id="utisak-dugme" onclick="utisakORestoranu()">Sačuvajte utisak</button>
+        </div>
+    </div>
+
+    </body>
+</html>

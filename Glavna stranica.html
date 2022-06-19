@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nevena i Luka</title>
+    <link rel="stylesheet" href="css/glavna-stranica.css">
+
+    <script src="javaskript.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a class="active">Početna</a>
+        <a href="NevenaCV.html">Nevenin CV</a>
+        <a href="LukaCV.html">Lukin CV</a>
+        <div class="dropdown">
+            <button class="dropbtn">Restoran</button>
+            <div class="dropdown-content">
+              <a href="Restoran.html">O nama</a>
+              <a href="Meni.html">Meni</a>
+              <a href="Rezervacija.html">Rezervacija</a>
+              <a href="Kviz.html">Kviz</a>
+            </div>
+          </div> 
+    </nav>
+
+    <header>
+        <h1>Dobro došli na sajt Nevene i Luke</h1>
+    </header>
+
+    <table id="ko-smo-mi">
+        <tr>
+            <td class="kolona">
+                <h1 style="font-family: cursive;">Ko smo mi?</h1>
+                <img class="kolona-slika" src="slike/studiranje.png" />
+                <div class="kolona-tekst">
+                    Mi smo studenti prve godine na Fakultetu tehničkih nauka u Novom Sadu. Upisani smo na smeru ,,Inženjerstvo informacionih sistema". Studiranje smo započeli 2021. godine. Od fakulteta očekujemo da nam pruži neophodna znanja pomoću kojih možemo da nastavimo da se razvijamo samostalno i postanemo IT stručnjaci.
+                </div>
+            </td>
+            <td class="kolona">
+                <h1 style="font-family: cursive;">Gde sebe vidimo?</h1>
+                <img class="kolona-slika" src="slike/coder-ninja.png" />
+                <div class="kolona-tekst">
+                    Za 5 godina sebe vidimo kao diplomirane inženjere informacionih tehnlogija koji su započeli stručnu praksu ili se zaposlili u nekoj IT kompaniji. Vremenom bi nastavili da usavršavamo svoja znanja i krajnji cilj nam je da postanemo stručnjaci u svojoj oblasti - odnosno <i>coding ninjas</i>.
+                </div>
+            </td >
+        </tr>
+    </table>
+
+    <div>
+        <h1 style="text-align:center; padding-top: 100px; padding-bottom: 20px; font-size: 40px; font-family: cursive;">Gde se nalazimo?</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.083651561189!2d19.849508115550226!3d45.24610117909902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b100d462acd9f%3A0x6c6724453c8b1fc6!2z0KTQsNC60YPQu9GC0LXRgiDRgtC10YXQvdC40YfQutC40YUg0L3QsNGD0LrQsCDQo9C90LjQstC10YDQt9C40YLQtdGC0LAg0YMg0J3QvtCy0L7QvCDQodCw0LTRgw!5e0!3m2!1ssr!2srs!4v1642059131370!5m2!1ssr!2srs" height="650" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div style="text-align: center; height: 400px; margin-top: 100px;">
+        <h1 style="font-family: cursive;">Izaberite autora i napišite utisak o njemu</h1>
+        <div >
+            <form id="utisak">
+                <input type="radio" id="autor1" name="autor" value="Nevena Gajić">
+                <label for="autor1">Nevena Gajić</label>
+                <input type="radio" id="autor2" name="autor" value="Luka Stupar">
+                <label for="autor2">Luka Stupar</label>
+                
+                <br/>
+                <br/>
+                <br/>
+                 
+                <label for="utisak" style="font-size: 20px; font-weight: bold;">Vaš utisak o autoru:</label><br>
+                <textarea id="utisak-tekst" name="utisak-tekst" rows="5" style="resize: none; border: none; outline: none; width: 50%;" placeholder="Vaš utisak..."></textarea><br>
+
+                <button id="potvrda" type="button" onclick="utisakOAutorima()">Potvrda</button>
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+</html>
